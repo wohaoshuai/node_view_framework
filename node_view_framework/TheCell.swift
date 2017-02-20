@@ -12,6 +12,8 @@ class TheCell: UITableViewCell {
     
     var database: Database!
     var cache: Cache!
+    var node: Node!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,7 +30,8 @@ class TheCell: UITableViewCell {
     }
 
     func update(node: Node){
-    
+        // we could crash the whole program is we don't do that
+        self.node = node
     }
     
     func save(node:Node){

@@ -26,11 +26,7 @@ class Cell1: TheCell {
     // mapping
     // field1 - a text in the view - need a String to specify what to be displayed
     override func update(node: Node) {
-        
-//        print("updating cell 1...")
         name.text = node.data["text"]
-//        print("cell 1 updated")
-        
     }
     
 }

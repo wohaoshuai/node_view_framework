@@ -28,7 +28,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.rowHeight = UITableViewAutomaticDimension;
         self.tableView.estimatedRowHeight = 44.0;
         
-        let types = [1, 2, 3, 4, 5, 6, 7]
+        
+        let types = [1, 2, 3, 4, 5, 6, 7, 8]
         for i in types{
         tableView.register(UINib(nibName:("Cell" + String(i)), bundle:nil), forCellReuseIdentifier: ("Cell" + String(i)))
         }
@@ -36,22 +37,38 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         load_data(id: history[0], rule: "Expand")
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.methodOfReceivedNotification(notification:)), name: Notification.Name("aixuexi"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.methodOfReceivedNotification2(notification:)), name: Notification.Name("button_touch"), object: nil)
     }
     
     func methodOfReceivedNotification(notification: Notification){
         
-        let cell1 = tableView.cellForRow(at: IndexPath(row: 1, section: 0)) as! TheCell
-        let cell2 = tableView.cellForRow(at: IndexPath(row: 3, section: 0)) as! TheCell
-        let cell3 = tableView.cellForRow(at: IndexPath(row: 5, section: 0)) as! TheCell
         
-        let id = Int(cell1.read()!)!
-        print(id)
-        let key = cell2.read()!
-        let value = cell3.read()!
-        
-        database.change_data(id: id, key: key, value: value)
+//        let cell1 = tableView.cellForRow(at: IndexPath(row: 1, section: 0)) as! TheCell
+//        let cell2 = tableView.cellForRow(at: IndexPath(row: 3, section: 0)) as! TheCell
+//        let cell3 = tableView.cellForRow(at: IndexPath(row: 5, section: 0)) as! TheCell
+//        
+//        let id = Int(cell1.read()!)!
+//        print(id)
+//        let key = cell2.read()!
+//        let value = cell3.read()!
+//        
+//        database.change_data(id: id, key: key, value: value)
     }
 
+    // cell handler - of which a delegation
+    func methodOfReceivedNotification2(notification: Notification){
+        
+        // improve casting here
+        let id = (notification.object as! Node).id
+        let rule = notification.name.rawValue
+        
+        print("rawValue ++++")
+        print(rule)
+        load_data(id: id, rule: "button_touch")
+        
+            }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -118,9 +135,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func update_view(id: Int) {
-        print(id)
-        print(history)
-        print(cache.meta_data)
+        
+//        print(id)
+//        print(history)
+//        print(cache.meta_data)
         
         if cache.meta_data["direction"] == "forward"{
             history.insert(id, at: 0)
@@ -181,7 +199,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cache.index_table[id] = i
             }
         }
-        print(self.cache.index_table)
+//        print(self.cache.index_table)
     }
 }
 

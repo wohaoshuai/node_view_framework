@@ -14,7 +14,7 @@ class Node {
     var type: Int = -1
     
     var data: [String: String] = [:]
-    var rules: [String:Any] = ["Touch": ["1", "Expand"] , "Expand":["0"], "back_expand":["0"], "display":["0"], "action_list": ["0"]]
+    var rules: [String:Any] = ["Touch": ["1", "Expand"] , "Expand":["0"], "Save":["0"], "Update":["0"]]
     
     init(){
         
@@ -29,6 +29,4 @@ class Node {
         self.type = type
         self.data = data
     }
-    
-    
 }

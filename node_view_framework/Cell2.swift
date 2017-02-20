@@ -26,13 +26,10 @@ class Cell2: TheCell {
     }
     
     override func update(node: Node) {
-        
-//        print("updating cell 2...")
         label.text = node.data["text"]
         
         if let imgName = node.data["img"]{
             imgView.image = UIImage(named: imgName)
         }
-//        print("cell 2 updated")
     }
 }

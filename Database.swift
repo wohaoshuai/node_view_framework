@@ -12,8 +12,37 @@ class Database {
     var nodes: [Node] = []
     
     init(){
-        addNode(id: 0, type: 0, data: [:], ids: [1])
+        addNode(id: 0, type: 0, data: [:], ids: [])
         addNode(id: 1, type: 2, data: ["img": "img1", "text": "number 1"], ids: [])
+        
+        
+        
+        addNode(id: 2, type: 1, data: ["text": "selector", "app": "true"], ids: [11])
+        add_ids(node: nodes[0], ids: [2])
+        
+        
+        
+        for i in 5...10 {
+            addNode(id: i, type: 8, data: ["text": "", "switch": "false"], ids: [])
+            change_rule(id: i, key: "button_touch", value: ["1", "UpdateDataAndRefresh"])
+            change_rule(id: i, key: "UpdateDataAndRefresh", value: ["1", "UpdateData", "refresh"])
+            change_rule(id: i, key: "UpdateData", value: ["0", "\(i)", "switch", "flip"])
+            change_rule(id: i, key: "refresh", value: ["0"])
+            add_ids(node: nodes[2], ids: [i])
+        }
+        
+        addNode(id: 11, type: 8, data: ["text": "", "switch": "false", "button_title": "Start", "button_background":"green-rect", "button_background1":"green-full", "button_title1":"End", "textcolor":"green"], ids: [])
+        
+        
+        
+        change_rule(id: 11, key: "button_touch", value: ["1", "UpdateDataAndRefresh", "if"])
+        change_rule(id: 11, key: "UpdateDataAndRefresh", value: ["1", "UpdateData", "refresh"])
+        
+        
+        change_rule(id: 11, key: "push_stack", value: ["0", "send", "1", "2", "3"])
+        change_rule(id: 11, key: "UpdateData", value: ["0", "11", "switch", "flip"])
+        change_rule(id: 11, key: "refresh", value: ["0"])
+        
 //        addNode(id: 2, type: 2, data: ["img": "img2", "text": "number 2"], ids: [4])
 //        addNode(id: 3, type: 1, data: ["img": "img1", "text": "number 3"], ids: [5,6])
 //        addNode(id: 4, type: 1, data: ["img": "img2", "text": "number 4"], ids: [])
@@ -71,6 +100,7 @@ class Database {
 //        a.rules["read"] = "woaixuexi"
     }
     
+    
     func addNode(id: Int, type: Int, data: [String:String], ids: [Int]) {
         let node = Node(id: id, type: type, data: data)
         
@@ -82,9 +112,15 @@ class Database {
 
         nodes.append(node)
         
-        //print(node.rules)
     }
     
+    func add_ids(node: Node, ids: [Int]){
+        var forward_ids = node.rules["Expand"] as! [String]
+        for id in ids{
+            forward_ids.append(String(id))
+        }
+        node.rules["Expand"] = forward_ids
+    }
 //    func addNodeAuto()-> Int{
 //        let id = 100000 + nodes.count
 //        
@@ -140,6 +176,7 @@ class Database {
     
     func query_by_(ids: [Int]) -> [Node] {
         var results: [Node] = []
+        
         for id in ids {
             if let result = query(id: id){
                 results.append(result)
@@ -156,12 +193,13 @@ class Database {
     func run_query_with_(id: Int, rule rule_name: String)->(core_data:[Node], meta_data:[String:String]){
         if let node = query(id: id){
             let rules = node.rules
-//            print("k")
-//            print("id")
-//            print(id)
-//            print("rules")
-//            print(rules)
+//            display query name
+            print("id")
+            print(id)
+            print("rules")
+            print(rules)
             if rules[rule_name] != nil {
+                print(rule_name)
                 let results = run_init(rule: (rule_name, rules[rule_name]) as (String, Any) , node: node)
                 (rule: (rule_name, rules[rule_name]) as (String, Any), of_node: node)
                 if meta_data["system"] != "0" {
@@ -186,7 +224,8 @@ class Database {
         core_data = []
         meta_data = [:]
         meta_data["direction"] = "stuck"
-        
+        print("run_init")
+        print(rule)
         run(rule, node)
         return (core_data, meta_data)
     }
@@ -198,6 +237,8 @@ class Database {
         var vals = (rule.1 as! [String])
         vals.remove(at: 0)
         
+        print("run rule")
+        print(key, mapper, vals)
         
         switch mapper {
         case 0:
@@ -221,7 +262,7 @@ class Database {
         }
     }
     
-    func change_rule(id: Int, key: String, value: String){
+    func change_rule(id: Int, key: String, value: [String]){
         if let node = query(id: id){
             node.rules[key] = value
         }
@@ -229,8 +270,12 @@ class Database {
     
     // MARK:= Mapper Functions
     
+    
+    //
+    
     func take_action(_ key: String, _ vals: [String], _ node: Node){
-        
+        print("take_action === ")
+        print(key)
         switch key {
         case "Expand":
             let ids = vals
@@ -241,6 +286,21 @@ class Database {
                     meta_data["core_data"] = "replace"
                 }
             }
+        case "UpdateData":
+            if (vals.count < 3){
+                meta_data["error"] = "UpdateDate failed - not enough vals"
+                print("UpdateDate failed - not enough vals")
+            } else {
+                change_data(id: Int(vals[0])!, key: vals[1], value: vals[2])
+                
+                
+                print("Print All Data")
+                for node in nodes {
+                    print(node.data)
+                }
+            }
+        case "refresh":
+            meta_data["direction"] = "fuck"
         default:
             print("404 Action Not Found")
         }
@@ -314,7 +374,18 @@ class Database {
     }
     
     func run_in_order(_ key: String, _ vals: [String], _ node: Node){
-        
+        for val in vals {
+            let rules = node.rules
+            if rules[val] != nil{
+                print("** && **")
+                print("   ++   ")
+                print(val, rules[val])
+                run((val, rules[val]), node)
+            } else {
+                meta_data["error"] = "run in order failed with rule \(key) and subruls \(vals)"
+            }
+            
+        }
     }
     
 }
