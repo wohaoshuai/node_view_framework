@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182DD2451E610314006CC39C /* RootcontrolHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182DD2441E610314006CC39C /* RootcontrolHistory.swift */; };
+		182DD2491E614760006CC39C /* TopDownGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182DD2481E614760006CC39C /* TopDownGradientLayer.swift */; };
+		182DD24B1E61D902006CC39C /* UIIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182DD24A1E61D902006CC39C /* UIIView.swift */; };
+		182DD24D1E624020006CC39C /* LayoutStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182DD24C1E624020006CC39C /* LayoutStack.swift */; };
+		183CA79B1E63708800873C3E /* GridMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CA79A1E63708800873C3E /* GridMap.swift */; };
+		18549C611E6049AC00CD4093 /* NVTopGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18549C601E6049AC00CD4093 /* NVTopGradientLayer.swift */; };
+		18549C631E605C1F00CD4093 /* NVBottomGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18549C621E605C1F00CD4093 /* NVBottomGradientLayer.swift */; };
+		18549C651E605C3300CD4093 /* NVLeadingGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18549C641E605C3300CD4093 /* NVLeadingGradientLayer.swift */; };
+		18549C671E605C4600CD4093 /* NVTrailingGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18549C661E605C4600CD4093 /* NVTrailingGradientLayer.swift */; };
+		1860D44A1E5F7E87000637F4 /* Rootcontrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860D4491E5F7E87000637F4 /* Rootcontrol.swift */; };
+		1860D4501E5FC53D000637F4 /* NVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860D44F1E5FC53D000637F4 /* NVView.swift */; };
+		1864954C1E63BE4200CE3E3B /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1864954B1E63BE4200CE3E3B /* MyClass.swift */; };
 		1881C1651E53CBC30085DCA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881C1641E53CBC30085DCA0 /* AppDelegate.swift */; };
 		1881C1671E53CBC30085DCA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881C1661E53CBC30085DCA0 /* ViewController.swift */; };
 		1881C16A1E53CBC30085DCA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1881C1681E53CBC30085DCA0 /* Main.storyboard */; };
@@ -23,6 +35,9 @@
 		18BCD53B1E59181F009DECC4 /* Cell8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD5391E59181F009DECC4 /* Cell8.swift */; };
 		18BCD53C1E59181F009DECC4 /* Cell8.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BCD53A1E59181F009DECC4 /* Cell8.xib */; };
 		18BCD53E1E5A4721009DECC4 /* BButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD53D1E5A4721009DECC4 /* BButton.swift */; };
+		18BCD5411E5CB4CF009DECC4 /* ViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD5401E5CB4CF009DECC4 /* ViewerController.swift */; };
+		18BCD5431E5CBB6A009DECC4 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD5421E5CBB6A009DECC4 /* CellView.swift */; };
+		18BCD5491E5CBBB4009DECC4 /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BCD5481E5CBBB4009DECC4 /* CellView.xib */; };
 		18C8EB611E54073000DBAF7A /* Cell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8EB5F1E54073000DBAF7A /* Cell3.swift */; };
 		18C8EB621E54073000DBAF7A /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C8EB601E54073000DBAF7A /* Cell3.xib */; };
 		18C8EB641E54C9D500DBAF7A /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8EB631E54C9D500DBAF7A /* Node.swift */; };
@@ -57,6 +72,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182DD2441E610314006CC39C /* RootcontrolHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootcontrolHistory.swift; sourceTree = "<group>"; };
+		182DD2481E614760006CC39C /* TopDownGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopDownGradientLayer.swift; path = ../TopDownGradientLayer.swift; sourceTree = "<group>"; };
+		182DD24A1E61D902006CC39C /* UIIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIIView.swift; sourceTree = "<group>"; };
+		182DD24C1E624020006CC39C /* LayoutStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutStack.swift; sourceTree = "<group>"; };
+		183CA79A1E63708800873C3E /* GridMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridMap.swift; sourceTree = "<group>"; };
+		18549C601E6049AC00CD4093 /* NVTopGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NVTopGradientLayer.swift; path = ../NVTopGradientLayer.swift; sourceTree = "<group>"; };
+		18549C621E605C1F00CD4093 /* NVBottomGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVBottomGradientLayer.swift; sourceTree = "<group>"; };
+		18549C641E605C3300CD4093 /* NVLeadingGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVLeadingGradientLayer.swift; sourceTree = "<group>"; };
+		18549C661E605C4600CD4093 /* NVTrailingGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVTrailingGradientLayer.swift; sourceTree = "<group>"; };
+		1860D4491E5F7E87000637F4 /* Rootcontrol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rootcontrol.swift; path = ../Rootcontrol.swift; sourceTree = "<group>"; };
+		1860D44F1E5FC53D000637F4 /* NVView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NVView.swift; path = ../NVView.swift; sourceTree = "<group>"; };
+		1864954B1E63BE4200CE3E3B /* MyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		1881C1611E53CBC30085DCA0 /* node_view_framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = node_view_framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1881C1641E53CBC30085DCA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1881C1661E53CBC30085DCA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +106,9 @@
 		18BCD5391E59181F009DECC4 /* Cell8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell8.swift; path = ../Cell8.swift; sourceTree = "<group>"; };
 		18BCD53A1E59181F009DECC4 /* Cell8.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Cell8.xib; path = ../Cell8.xib; sourceTree = "<group>"; };
 		18BCD53D1E5A4721009DECC4 /* BButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BButton.swift; sourceTree = "<group>"; };
+		18BCD5401E5CB4CF009DECC4 /* ViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerController.swift; sourceTree = "<group>"; };
+		18BCD5421E5CBB6A009DECC4 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		18BCD5481E5CBBB4009DECC4 /* CellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellView.xib; path = ../CellView.xib; sourceTree = "<group>"; };
 		18C8EB5F1E54073000DBAF7A /* Cell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell3.swift; sourceTree = "<group>"; };
 		18C8EB601E54073000DBAF7A /* Cell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell3.xib; sourceTree = "<group>"; };
 		18C8EB631E54C9D500DBAF7A /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
@@ -120,10 +150,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183CA79C1E6370A000873C3E /* data structure */ = {
+			isa = PBXGroup;
+			children = (
+				183CA79A1E63708800873C3E /* GridMap.swift */,
+			);
+			name = "data structure";
+			sourceTree = "<group>";
+		};
 		1881C1581E53CBC30085DCA0 = {
 			isa = PBXGroup;
 			children = (
-				1881C1631E53CBC30085DCA0 /* node_view_framework */,
+				183CA79C1E6370A000873C3E /* data structure */,
+				1881C1631E53CBC30085DCA0 /* node view framework */,
 				1881C17B1E53CBC30085DCA0 /* node_view_frameworkTests */,
 				1881C1861E53CBC40085DCA0 /* node_view_frameworkUITests */,
 				1881C1621E53CBC30085DCA0 /* Products */,
@@ -140,20 +179,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1881C1631E53CBC30085DCA0 /* node_view_framework */ = {
+		1881C1631E53CBC30085DCA0 /* node view framework */ = {
 			isa = PBXGroup;
 			children = (
-				1881C19F1E53F5A80085DCA0 /* Cells */,
+				182DD2481E614760006CC39C /* TopDownGradientLayer.swift */,
+				18549C601E6049AC00CD4093 /* NVTopGradientLayer.swift */,
+				18549C621E605C1F00CD4093 /* NVBottomGradientLayer.swift */,
+				18549C641E605C3300CD4093 /* NVLeadingGradientLayer.swift */,
+				18549C661E605C4600CD4093 /* NVTrailingGradientLayer.swift */,
 				1881C1641E53CBC30085DCA0 /* AppDelegate.swift */,
-				1881C1661E53CBC30085DCA0 /* ViewController.swift */,
-				18C8EB651E54C9DA00DBAF7A /* Model */,
+				1860D44F1E5FC53D000637F4 /* NVView.swift */,
+				182DD24A1E61D902006CC39C /* UIIView.swift */,
+				182DD24C1E624020006CC39C /* LayoutStack.swift */,
+				1860D4491E5F7E87000637F4 /* Rootcontrol.swift */,
+				1864954B1E63BE4200CE3E3B /* MyClass.swift */,
+				182DD2441E610314006CC39C /* RootcontrolHistory.swift */,
 				1881C1681E53CBC30085DCA0 /* Main.storyboard */,
 				1881C16E1E53CBC30085DCA0 /* Assets.xcassets */,
 				1881C1701E53CBC30085DCA0 /* LaunchScreen.storyboard */,
 				1881C1731E53CBC30085DCA0 /* Info.plist */,
 				1881C16B1E53CBC30085DCA0 /* node_view_framework.xcdatamodeld */,
-				18BCD53D1E5A4721009DECC4 /* BButton.swift */,
+				189452B61E5F7C3D0022945A /* version 2 */,
+				18BCD53F1E5CB20B009DECC4 /* version 1 */,
 			);
+			name = "node view framework";
 			path = node_view_framework;
 			sourceTree = "<group>";
 		};
@@ -197,6 +246,27 @@
 				18BCD5391E59181F009DECC4 /* Cell8.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		189452B61E5F7C3D0022945A /* version 2 */ = {
+			isa = PBXGroup;
+			children = (
+				18BCD5421E5CBB6A009DECC4 /* CellView.swift */,
+				18BCD5401E5CB4CF009DECC4 /* ViewerController.swift */,
+				18BCD5481E5CBBB4009DECC4 /* CellView.xib */,
+			);
+			name = "version 2";
+			sourceTree = "<group>";
+		};
+		18BCD53F1E5CB20B009DECC4 /* version 1 */ = {
+			isa = PBXGroup;
+			children = (
+				18BCD53D1E5A4721009DECC4 /* BButton.swift */,
+				1881C1661E53CBC30085DCA0 /* ViewController.swift */,
+				18C8EB651E54C9DA00DBAF7A /* Model */,
+				1881C19F1E53F5A80085DCA0 /* Cells */,
+			);
+			name = "version 1";
 			sourceTree = "<group>";
 		};
 		18C8EB651E54C9DA00DBAF7A /* Model */ = {
@@ -284,7 +354,7 @@
 					1881C1771E53CBC30085DCA0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 44JQGKTEQ7;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 1881C1601E53CBC30085DCA0;
 					};
 					1881C1821E53CBC40085DCA0 = {
@@ -324,6 +394,7 @@
 				18C8EB621E54073000DBAF7A /* Cell3.xib in Resources */,
 				1881C1721E53CBC30085DCA0 /* LaunchScreen.storyboard in Resources */,
 				18C8EB791E55835A00DBAF7A /* Cell7.xib in Resources */,
+				18BCD5491E5CBBB4009DECC4 /* CellView.xib in Resources */,
 				18C8EB6D1E55057B00DBAF7A /* Cell4.xib in Resources */,
 				1881C16F1E53CBC30085DCA0 /* Assets.xcassets in Resources */,
 				1881C1A31E53F65B0085DCA0 /* Cell2.xib in Resources */,
@@ -356,22 +427,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C8EB611E54073000DBAF7A /* Cell3.swift in Sources */,
+				18BCD5411E5CB4CF009DECC4 /* ViewerController.swift in Sources */,
+				18549C651E605C3300CD4093 /* NVLeadingGradientLayer.swift in Sources */,
+				1860D4501E5FC53D000637F4 /* NVView.swift in Sources */,
+				18549C671E605C4600CD4093 /* NVTrailingGradientLayer.swift in Sources */,
 				18C8EB7B1E559BA700DBAF7A /* Cache.swift in Sources */,
+				18549C631E605C1F00CD4093 /* NVBottomGradientLayer.swift in Sources */,
 				18BCD53E1E5A4721009DECC4 /* BButton.swift in Sources */,
 				18C8EB741E5580F400DBAF7A /* Cell6.swift in Sources */,
+				18549C611E6049AC00CD4093 /* NVTopGradientLayer.swift in Sources */,
 				1881C16D1E53CBC30085DCA0 /* node_view_framework.xcdatamodeld in Sources */,
 				1881C1A21E53F65B0085DCA0 /* Cell2.swift in Sources */,
+				183CA79B1E63708800873C3E /* GridMap.swift in Sources */,
 				18C8EB701E550D1300DBAF7A /* Cell5.swift in Sources */,
 				18C8EB641E54C9D500DBAF7A /* Node.swift in Sources */,
+				182DD24B1E61D902006CC39C /* UIIView.swift in Sources */,
+				182DD2451E610314006CC39C /* RootcontrolHistory.swift in Sources */,
 				1881C1671E53CBC30085DCA0 /* ViewController.swift in Sources */,
 				1881C1A51E5400B30085DCA0 /* TheCell.swift in Sources */,
+				1864954C1E63BE4200CE3E3B /* MyClass.swift in Sources */,
 				1881C1651E53CBC30085DCA0 /* AppDelegate.swift in Sources */,
+				1860D44A1E5F7E87000637F4 /* Rootcontrol.swift in Sources */,
+				182DD2491E614760006CC39C /* TopDownGradientLayer.swift in Sources */,
 				18C8EB671E54CD5800DBAF7A /* Query.swift in Sources */,
 				18C8EB691E54D03800DBAF7A /* Database.swift in Sources */,
 				1881C19D1E53F58B0085DCA0 /* Cell1.swift in Sources */,
 				18C8EB6C1E55057B00DBAF7A /* Cell4.swift in Sources */,
 				18BCD53B1E59181F009DECC4 /* Cell8.swift in Sources */,
 				18C8EB781E55835A00DBAF7A /* Cell7.swift in Sources */,
+				18BCD5431E5CBB6A009DECC4 /* CellView.swift in Sources */,
+				182DD24D1E624020006CC39C /* LayoutStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +613,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "alien-robot-cat.node-view-framework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -543,7 +628,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "alien-robot-cat.node-view-framework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -552,6 +637,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 44JQGKTEQ7;
 				INFOPLIST_FILE = node_view_frameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -567,7 +653,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 44JQGKTEQ7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = node_view_frameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "alien-robot-cat.node-view-frameworkTests";
@@ -581,6 +667,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 44JQGKTEQ7;
 				INFOPLIST_FILE = node_view_frameworkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
